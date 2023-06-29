@@ -15,17 +15,45 @@ body{
     margin: auto;
 }
 
+p{
+    padding: 1rem;
+}
+
 .col{
     float: left;
+    width: 360px;
+    height: 100px;
     width: calc(100% / 3);
     padding: 0 1rem;
 }
 
 img{
-    max-width: 100%;
+    width: 100px;
+}
+
+.text-left{
+    text-align: left;
 }
 
 h1{
     color: e5306f;
     padding: 1rem 0;
+}
+
+h3{
+    color: white;
+}
+
+span{
+    color: lightgray
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.debug .col{
+    height: 200px;
+    background-color: black;
 }
